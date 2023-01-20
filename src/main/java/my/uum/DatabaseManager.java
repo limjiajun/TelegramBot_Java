@@ -35,7 +35,7 @@ public class DatabaseManager {
     private Connection connect() {
         Connection conn = null;
         String localUrl = "jdbc:sqlite:C:/Users/JUN/IdeaProjects/group-project-bugbug-master/database/bot.db";
-        String clearDbUrl = System.getenv("CLEARDB_DATABASE_URL");
+        String clearDbUrl = System.getenv("https://github.com/limjiajun/group-project-bugbug-master/blob/main/database/bot.db");
 
         try {
             conn = DriverManager.getConnection(localUrl);
