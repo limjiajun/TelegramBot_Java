@@ -31,20 +31,24 @@ public class DatabaseManager {
      * The base constructor.
      * Making connection.
      */
+   // jdbc:sqlite:C:/Users/JUN/IdeaProjects/group-project-bugbug-master/database/bot.db
     private Connection connect() {
-//        String url = "jdbc:sqlite:C:\\Users\\qijun\\OneDrive - Allkindsoftware\\Desktop\\Source Code\\A221\\Real Time Programming\\group-project-bugbug\\database\\bot.db";
-        String url = "jdbc:sqlite:C:/Users/U/IdeaProjects/group-project-bugbug/database/bot.db";
-        //String url = "jdbc:sqlite:C:\\Users\\JUN\\IdeaProjects\\group-project-bugbug\\database\\bot.db";
         Connection conn = null;
+        String localUrl = "jdbc:sqlite:C:/Users/JUN/IdeaProjects/group-project-bugbug-master/database/bot.db";
+        String clearDbUrl = System.getenv("CLEARDB_DATABASE_URL");
+
         try {
-            conn = DriverManager.getConnection(url);
+            conn = DriverManager.getConnection(localUrl);
         } catch (SQLException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Failed to connect to local SQLite database: " + e.getMessage());
+            try {
+                conn = DriverManager.getConnection(clearDbUrl, "b0f46ec45116cf", "66c8b1ff");
+            } catch (SQLException ex) {
+                System.out.println("Failed to connect to ClearDB MySQL database: " + ex.getMessage());
+            }
         }
         return conn;
-
     }
-
     /**
      * The system admin need to provide loginStaffID and loginPassword to log in the system.
      *
