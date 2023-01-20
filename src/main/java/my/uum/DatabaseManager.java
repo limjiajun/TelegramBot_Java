@@ -33,22 +33,21 @@ public class DatabaseManager {
      */
    // jdbc:sqlite:C:/Users/JUN/IdeaProjects/group-project-bugbug-master/database/bot.db
     private Connection connect() {
+//        String url = "jdbc:sqlite:C:\\Users\\qijun\\OneDrive - Allkindsoftware\\Desktop\\Source Code\\A221\\Real Time Programming\\group-project-bugbug\\database\\bot.db";
+        //String url = "jdbc:sqlite:C:/Users/U/IdeaProjects/group-project-bugbug/database/bot.db";
+       // String url = "jdbc:sqlite:C:\\Users\\JUN\\IdeaProjects\\group-project-bugbug\\database\\bot.db";
+        String url = "jdbc:mysql://b5ca64e3189186:0ae75afd@us-cdbr-east-06.cleardb.net/heroku_73e5d4e0567f209";
         Connection conn = null;
-        String localUrl = "jdbc:sqlite:C:/Users/JUN/IdeaProjects/group-project-bugbug-master/database/bot.db";
-        String clearDbUrl = System.getenv("https://github.com/limjiajun/group-project-bugbug-master/blob/main/database/bot.db");
 
         try {
-            conn = DriverManager.getConnection(localUrl);
+            conn = DriverManager.getConnection(url);
         } catch (SQLException e) {
-            System.out.println("Failed to connect to local SQLite database: " + e.getMessage());
-            try {
-                conn = DriverManager.getConnection(clearDbUrl, "b0f46ec45116cf", "66c8b1ff");
-            } catch (SQLException ex) {
-                System.out.println("Failed to connect to ClearDB MySQL database: " + ex.getMessage());
-            }
+            System.out.println(e.getMessage());
         }
         return conn;
+
     }
+
     /**
      * The system admin need to provide loginStaffID and loginPassword to log in the system.
      *
