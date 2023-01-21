@@ -12,8 +12,14 @@ https://github.com/limjiajun/group-project-bugbug-master.git
 
 Telegram bot link
 1. https://t.me/STIW3054_bugbug_bot
-2. 
+
 <img src="https://user-images.githubusercontent.com/29892279/213844120-4caad9dc-7c72-40b0-848c-95aefa438e20.png" width=55% height=55% > </br>
+
+2.Search for the "@STIW3054_bugbug_bot" bot on Telegram
+
+<img src="https://user-images.githubusercontent.com/29892279/213844241-fb6264f8-1fdf-44d7-804e-9a791b486849.png" width=55% height=55% > </br>
+
+Activate a Heroku app  from a GitHub repository
 
 <img src="https://user-images.githubusercontent.com/29892279/213843953-f76278a8-ee79-464f-9a10-c82617c59679.png" width=55% height=55% > </br>
 
