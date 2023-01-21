@@ -10,6 +10,11 @@
 Github for herkoku
 https://github.com/limjiajun/group-project-bugbug-master.git
 
+Telegram bot link
+1. https://t.me/STIW3054_bugbug_bot
+2. 
+<img src="https://user-images.githubusercontent.com/29892279/213844120-4caad9dc-7c72-40b0-848c-95aefa438e20.png" width=55% height=55% > </br>
+
 <img src="https://user-images.githubusercontent.com/29892279/213843953-f76278a8-ee79-464f-9a10-c82617c59679.png" width=55% height=55% > </br>
 
 | Matric Number    |Name           | Photo         | Phone Number    |
