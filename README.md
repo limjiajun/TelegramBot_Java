@@ -7,6 +7,11 @@
 1. Mention who is the leader.
 1. Other related info (if any)
 
+Github for herkoku
+https://github.com/limjiajun/group-project-bugbug-master.git
+
+<img src="https://user-images.githubusercontent.com/29892279/213843953-f76278a8-ee79-464f-9a10-c82617c59679.png" width=55% height=55% > </br>
+
 | Matric Number    |Name           | Photo         | Phone Number    |
 | :----:        |    :----:          |  :----: | :----:        |
 | 281231      | Lim Jia Jun (Leader) |      <img src="https://user-images.githubusercontent.com/29892279/201517012-34d0ac1f-c549-4afc-a8b8-3c3507301673.JPG" width=20% height=20%>| 011-28797556 |
@@ -31,8 +36,111 @@ Besides that, the user who wants to book the meeting rooms can use our system to
 ![STIW3054_BugBug_Diagram-FlowChart drawio](https://user-images.githubusercontent.com/72723643/201614006-92bc369d-8d84-4b08-87ac-aabd1d1c7893.png)
 
 ## User manual for installing your application on Heroku Server
-
+Reference this website:
+1. It provides information on how to deploy a Java Telegram bot on a Heroku server.
  
+ https://medium.com/@learntodevelop2020/deploy-java-telegram-bot-on-heroku-server-42bfcfc311d3
+ 
+2.Heroku Deployment using Github
+
+https://www.youtube.com/watch?v=3tK9qIdoJ6I&t=20s
+
+#### Step 1
+Open your pom.xml file from your java bot project, after dependencies tag. Specify the exact path of your Main class.
+
+    
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>appassembler-maven-plugin</artifactId>
+        <version>1.1.1</version>
+        <configuration>
+          <assembleDirectory>target</assembleDirectory>
+          <programs>
+            <program>
+              <mainClass>my.uum.App</mainClass>
+              <name>workerBot</name>
+            </program>
+          </programs>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>assemble</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+  
+#### Step 2
+In the main project path create a file called:
+
+“Procfile” inside it.
+Write down the code below in the Procfile.
+
+worker: sh target/bin/workerBot 
+
+##  HEROKU
+
+#### Step 1
+Login to the account
+
+<img src="https://user-images.githubusercontent.com/29892279/213843462-e7528eb6-2e6b-4af1-b0ba-543d02c7e890.png" width=55% height=55% > </br>
+
+#### Step 2
+Click New dropdown on the top right 
+
+<img src="https://user-images.githubusercontent.com/29892279/213843499-499bbb92-a048-457e-8fbf-a4d4465d002e.png"  width=55% height=55% > </br>
+
+
+
+#### Step 3
+Select Create New App
+    
+    - Enter App name 
+    - Choose Region as United States 
+    - Click create app button 
+   
+<img src="https://user-images.githubusercontent.com/29892279/213843525-b39291bc-52ed-4279-b7be-d7845eccea43.png"  width=55% height=55% > </br>
+
+
+#### Step 4
+Choose Deployment method in Deploy, select GitHub option.
+
+    - Login to Github Account by entering the credential
+    - Authorize it 
+    
+    
+    
+    
+ <img src="https://user-images.githubusercontent.com/29892279/213843570-15ddb4c8-6e04-43e3-89a9-bcfd0fc1cf6d.png"  width=55% height=55% > </br>
+
+#### Step 5
+Enable the automatic and manual deploy function.<br>
+
+ <img src="https://user-images.githubusercontent.com/29892279/213843604-262e9873-5b80-4c68-b7fe-b424d46de20d.png"  width=55% height=55% > </br>
+
+#### DATABASE
+ClearDB MySQL is a Heroku add-on that provides a MySQL database service for Heroku apps. To connect to a ClearDB MySQL database on Heroku using a local tool like HeidiSQL, you will need to follow these steps:
+
+Install and open HeidiSQL on your local machine.
+In the Heroku app's dashboard, navigate to the "Resources" tab and find the ClearDB MySQL add-on.
+Click on the add-on to open its details page, which will have a "Settings" tab that shows the database's connection information.
+In HeidiSQL, create a new session and enter the connection information from the ClearDB MySQL add-on's details page, including the hostname, port, username, and password.
+Click "Open" to connect to the database.
+Please keep in mind that you need to have a valid account on Heroku and the Heroku CLI tool installed in your machine. Also you need to have the ClearDB add-on attached to your Heroku app to be able to get the connection informations.
+
+
+<img src="https://user-images.githubusercontent.com/29892279/213843707-b0eeb819-4294-4e3f-84fa-2376cd271474.png"  width=55% height=55% > </br>
+
+<img src="https://user-images.githubusercontent.com/29892279/213843813-5c0097e6-0103-442c-8be3-9a40698dff10.png"  width=55% height=55% > </br>
+
+<img src="https://user-images.githubusercontent.com/29892279/213843843-beb782b6-5c6f-45ef-92fb-c5a663ceab8a.png"  width=55% height=55% > </br>
+<img src="https://user-images.githubusercontent.com/29892279/213843885-3e58f99b-20dc-421d-9ac8-5611718124bb.png"  width=55% height=55% > </br>
+
+
+
 
 ## User manual/guideline for testing the system
 1. User can start using our telegram bot by searching the @STIW3054_bugbug_bot .
@@ -167,11 +275,21 @@ that let user choose their role.<br/><br/>
 <img src="https://user-images.githubusercontent.com/73268400/213635946-8b8dd86b-5f80-46ae-9c4d-666a74d863c1.jpg" width=25% height=25% > </br>
 <img src="https://user-images.githubusercontent.com/73268400/213636005-64aa0c7c-59b8-4004-a691-242589950976.jpg" width=25% height=25% > <img src="https://user-images.githubusercontent.com/73268400/213640803-dec46977-b2f8-40ba-ac9d-30d905561d3d.jpg" width=25% height=25% > <img src="https://user-images.githubusercontent.com/73268400/213640949-5695e20e-9dbc-4d7b-b798-f5f95889972c.jpg" width=25% height=25% >
 
+User 
+
+
+<img src="https://user-images.githubusercontent.com/29892279/213842486-b6228ee3-ef57-4d3b-8c20-b1ab5bb2a938.png" width=25% height=25% > <img src="https://user-images.githubusercontent.com/29892279/213842520-da602ea9-6051-4477-808c-17c7babb833b.png" width=25% height=25% > <img src="https://user-images.githubusercontent.com/29892279/213842604-825b3513-aebd-4eaa-9d5c-cbb0d7157646.png" width=25% height=25% >  <img src="https://user-images.githubusercontent.com/29892279/213842552-d041dbd1-9f70-4e0d-8e92-47e18ca32924.png" width=25% height=25% >   <img src="https://user-images.githubusercontent.com/29892279/213842556-09f432ae-9f71-464f-a9e8-7b3e41a63527.png" width=25% height=25% >   <img src="https://user-images.githubusercontent.com/29892279/213842611-46ed4c31-693a-4027-924a-6899044b6952.png" width=25% height=25% >  <img src="https://user-images.githubusercontent.com/29892279/213842569-aed8bedf-e6f5-4542-88dd-4b16d98c438c.png" width=25% height=25% >   <img src="https://user-images.githubusercontent.com/29892279/213842567-d632dfeb-7efd-4449-8449-903ac5dae8b6.png" width=25% height=25% >  <img src="https://user-images.githubusercontent.com/29892279/213842565-929960d1-e1a4-41f6-a6d7-b3055f296a56.png" width=25% height=25% >   <img src="https://user-images.githubusercontent.com/29892279/213842562-9e0f0544-6a06-4218-af4a-151e160f33ef.png" width=25% height=25% >  <img src="https://user-images.githubusercontent.com/29892279/213842560-04d93e2d-338a-4064-9be5-2ffc04bb8fc0.png" width=25% height=25% >  <img src="https://user-images.githubusercontent.com/29892279/213842558-6b37c73f-40d8-4b23-a9d0-a68d68b3a163.png" width=25% height=25% > <img src="https://user-images.githubusercontent.com/29892279/213842557-aeb7b419-0fa5-48fc-b148-324ae30cc520.png" width=25% height=25% > 
+
+
+
+
+
+
 ## Use Case Diagram!
 <img src="https://user-images.githubusercontent.com/29892279/210562818-f341e8da-d170-4147-98ef-588aefd0a188.png" width=70% height=70% >
 
 ## UML Class Diagram
-
+<img src="https://user-images.githubusercontent.com/73087963/213715606-7642a50b-0ac0-4f6b-b0d1-abe36b06222e.png" width=70% height=70% >
 
 ## Database Design
 <img src="https://user-images.githubusercontent.com/29892279/211260314-e12d4668-c9a1-43d4-8ebc-1a9ddd310a32.png" width=70% height=70% >
@@ -204,3 +322,5 @@ that let user choose their role.<br/><br/>
 |  22.   | Zaur Hasanov. (2018, February 10). How to create Telegram Bot in Java [ Tutorial ] [Video]. YouTube. https://www.youtube.com/watch?v=xv-FYOizUSY |
 
 ## JavaDoc
+https://github.com/STIW3054-A221/group-project-bugbug/blob/master/JavaDoc/index.html
+https://limjiajun.github.io/JavaDocGP/my/uum/package-summary.html
