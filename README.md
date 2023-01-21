@@ -7,7 +7,7 @@
 1. Mention who is the leader.
 1. Other related info (if any)
 
-Github for herkoku
+## Github for herkoku
 https://github.com/limjiajun/group-project-bugbug-master.git
 
 Telegram bot link
@@ -19,7 +19,7 @@ Telegram bot link
 
 <img src="https://user-images.githubusercontent.com/29892279/213844241-fb6264f8-1fdf-44d7-804e-9a791b486849.png" width=55% height=55% > </br>
 
-Activate a Heroku app  from a GitHub repository
+## Activate a Heroku app  from a GitHub repository
 
 <img src="https://user-images.githubusercontent.com/29892279/213843953-f76278a8-ee79-464f-9a10-c82617c59679.png" width=55% height=55% > </br>
 
