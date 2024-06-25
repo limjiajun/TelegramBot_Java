@@ -25,7 +25,7 @@ Telegram bot link
 
 | Matric Number    |Name           | Photo         | Phone Number    |
 | :----:        |    :----:          |  :----: | :----:        |
-| 281231      | Lim Jia Jun (Leader) |      <img src="https://user-images.githubusercontent.com/29892279/201517012-34d0ac1f-c549-4afc-a8b8-3c3507301673.JPG" width=20% height=20%>| 011-28797556 |
+| 281231      | Lim Jia Jun |      <img src="https://user-images.githubusercontent.com/29892279/201517012-34d0ac1f-c549-4afc-a8b8-3c3507301673.JPG" width=20% height=20%>| 011-28797556 |
 
 
 ## Title of your application
