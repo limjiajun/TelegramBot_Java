@@ -26,10 +26,7 @@ Telegram bot link
 | Matric Number    |Name           | Photo         | Phone Number    |
 | :----:        |    :----:          |  :----: | :----:        |
 | 281231      | Lim Jia Jun (Leader) |      <img src="https://user-images.githubusercontent.com/29892279/201517012-34d0ac1f-c549-4afc-a8b8-3c3507301673.JPG" width=20% height=20%>| 011-28797556 |
-| 279590      | Chong Qi Jun       |<img src="https://user-images.githubusercontent.com/96851943/201516573-bc176bea-a75d-40d1-8d39-ef0707da0714.jpeg" width=20% height=20%>| 016-4926695 |
-| 278985      | Teoh Ern Sheng     |<img src="https://user-images.githubusercontent.com/73087963/213664887-3d9a077d-2166-481c-a250-c4071f463d15.jpg" width="20%" height="20%"/>|011-20619201 |
-| 277585      | Leong Qing Yun     |<img src="https://user-images.githubusercontent.com/73087963/201590357-090f120c-a014-45e5-971a-7c4a78c9d15f.jpg" width=20% height=20%>| 019-7108853 |
-| 279437      | Tan Jia Kee        |<img src="https://user-images.githubusercontent.com/73268400/201550653-30b6cb6e-9509-4239-a820-2b7f9aef1853.jpg" width=20% height=20%>| 018-4055998 |
+
 
 ## Title of your application
 A  Meeting Room Booking Systam  (@STIW3054_bugbug_bot)
