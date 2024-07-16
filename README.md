@@ -1,11 +1,5 @@
-## Requirements for Group Project
+## Requirements for  Project
 [Read the instruction](https://github.com/STIW3054-A221/class-activity-soc/blob/main/GroupProject.md)
-
-
-## Group Info:
-1. Matric Number & Name & Photo & Phone Number
-1. Mention who is the leader.
-1. Other related info (if any)
 
 ## Github for herkoku
 https://github.com/limjiajun/group-project-bugbug-master.git
